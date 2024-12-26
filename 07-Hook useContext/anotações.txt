@@ -1,0 +1,21 @@
+É um dos hooks mais importantes e principais de se entender
+
+Quando queremos que os componentes se comuniquem temos que utilizar o useContext
+Ex: Usuário loga em uma aplicação e deus dados de login devem estar ao mesmo tempo no componente header e no componente footer
+
+Invés de usarmos props, usaremos o hook useContext, e ele compartilhará dados entre todos os componentes que ele envolve.
+
+É UM FORMA DE FAZER OS NOSSOS COMPONENTES TROCAREM DADOS, INFORMAÇÕES, FUNÇÕES E ASSIM UM COMPONENTE X PODE ALTERAR
+UM COMPONENTE Y.
+
+Passos para a utilização do useContext:
+1-Criar o contexto
+Dentro da pasta 'context' é criado o arquivo "UserContext.js", nele importamos o hook createContext e utilizamos ele dentro de uma variável que será exportada
+
+2-Importar a variável com contexto criado
+Dentro do nosso arquivo "App.jsx" , que é o arquivo com o componente principal e que importa outros componentes, vamos importar a variável com o contexto criado e vamos englobar todos os componentes que precisam dos mesmos dados nessa variável/componente de contexto.
+O componente UserContext é um onjeto que tem como uma de suas chaves o elemento "Provider" é nele que ficarão os dados
+
+3-Envolver todos os componentes dentro de <UserContext.Provider></UserContext.Provider>
+
+4-Passar os dados/funções que queremos que sejam compartilhadas no contexto entre os componentes dentro do provider por meio do atributo value ex: value={{dado: 'nome'}}
