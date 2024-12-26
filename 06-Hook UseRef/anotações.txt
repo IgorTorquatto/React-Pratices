@@ -1,0 +1,2 @@
+É um hook que serve para capturar elementos do html ( semelhante ao query do javascript )
+Ele capturar valores com o atributo ref e nome especificados
