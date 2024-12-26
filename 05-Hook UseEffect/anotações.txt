@@ -1,0 +1,7 @@
+o useEffect é um hook executado assim que a página carregar ou quando o estado de um componente se altera
+
+Devemos passsar qual estado o useEffect deve monitorar :
+
+useEffect(()=>{
+    função que diz o que fazer
+},[estado_monitorado])
