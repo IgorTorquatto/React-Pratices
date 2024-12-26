@@ -1,0 +1,19 @@
+Como o react funciona com a criação de componente, vamos treinar a criação deles.
+
+Um componente jsx é um componente javascript que tem elementos html. Ele é exportado e pode ser importado dentro de outro componente.
+
+Ao final, todos os componentes serão renderizados na div de id "root" do index.html
+
+Componentes devem sempre ser criados com letra inicial maiúscula. Existem class componentes ( componentes criados com a estrutura de classes javascript ) e os functions components ( componentes criados com a estrutura de funções )
+
+Os componentes devem sempre retornar uma <div> ou um fragment <>
+
+*Nesse primeiro exemplo:
+Criamos o componente "Exemplo.jsx" dentro da pasta components utilizando function component
+Exeportamos esse componente
+Importamos o componente dentro de "App.jsx"
+Utilizamos esse componente 
+Renderizamos o "App.jsx" dentro de "main.jsx"
+
+OBS: Um elemento React DEVE retornar apenas UM elemento. Isso qur dizer que mesmo que um componente importe e utilize vários componentes
+ao final ele deve retornar apenas um elemento, ou seja, tudo deve estar envolto por uma <div> ou fragment <> para funcionar

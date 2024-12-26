@@ -1,0 +1,3 @@
+-Pensando em performance criamos um projeto react utilizando o vite e o gerenciador de pacotes yarn
+-O projeto react é simples de entender. Nele temos um index.html com id "root" que é capturado pelo arquivo "main.jsx" e ele renderiza outro arquivo jsx dentro dessa div "root"
+-Então o react funciona com o conceito de componentes onde podemos renderizar componentes dentro de um arquivo html
