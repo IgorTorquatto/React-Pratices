@@ -13,3 +13,8 @@ OBS: Em Title.jsx usamos props explicitamente escrevendo o termo props
 Em Mensagem.jsx utilizamos props também, mas agora deixando o código mais limpo usando a desestruturação do javascript
 
 OBS: Precisamos definir o defaultProp que é o valor default de uma prop caso na chamada da componente não seja atribuida nenhuma propriedade
+
+Adicional:
+Prop-types -> Podemos definir o tipo de dado que será recebido por um componente via prop, para isso devemos instalar, com o nosso gerenciador de pacotes, o prop-types.
+
+Após instalar devemos definir qual tipo de dado será passado.
