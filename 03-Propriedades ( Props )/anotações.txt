@@ -1,0 +1,15 @@
+Muitas vezes vamos querer renderizar o mesmo componente mais de uma vez, porém alterando algumas propriedades dele em cada chamada.
+
+Por exemplo:
+
+Vamos criar um componente Title.jsx que retorna um elemento h1 e será chamado três vezes
+A cada chamada do Title.jsx ele deve renderizar um título diferente.
+
+Para que ele possamos passar o texto do titulo ao chamar o componente devemos utilizar as PROPS 
+Assim a function component recebe como parâmetro "props" e utiliza no javascript o "props.name_prop" para mostrar o valor passado.
+Quando chamamos o componente atribuimos o valor e nome da prop.
+
+OBS: Em Title.jsx usamos props explicitamente escrevendo o termo props
+Em Mensagem.jsx utilizamos props também, mas agora deixando o código mais limpo usando a desestruturação do javascript
+
+OBS: Precisamos definir o defaultProp que é o valor default de uma prop caso na chamada da componente não seja atribuida nenhuma propriedade
