@@ -1,0 +1,9 @@
+Hooks são funções que controlam o estado ou ciclo de vida de um componente, devemos importá-lo do react para utilizar
+
+O primeiro hook que veremos será o useState()
+
+Ao utilizar o useState criamos uma constante com o nome da variável e o método que altera o valor dessa variável:
+
+const [count,setCount] = useState(0);
+
+Definimos o valor inicial do estado dentro de useState e utilizando o método podemos alterar o valor do estado para realizar a operação que queremos dentro do componente.
