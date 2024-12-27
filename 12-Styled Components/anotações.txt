@@ -1,0 +1,72 @@
+Styled Component (biblioteca):
+
+-Une javascript com css
+-Deixa mais organizado toda a aplicação
+-Necessita instalar por meio do gerenciador de pacotes ( yarn ou npm )
+-Também cria um identificador único para as classes ao estilizar e por isso não causará conflitos
+
+
+Como usar (exemplo):
+
+Na nossa pasta de componentes criamos um componente Card
+Criamos um arquivo javascript para estilos "styles.js"
+Importamos o styled de styles-components e criamos uma variável definindo qual tag queremos criar 
+Estilizamos essa variável que no final das contas será uma tag
+
+ex: (styles.js)
+import styled from "styled-components";
+
+export const H2 = styled.h2`
+    font-size: 32px;
+    color: red;
+`
+
+Importamos a variável criada/estilizada ( o styled component ) no nosso componente e utilizamos
+
+ex: (Card.jsx)
+import { H2 } from "./styles"
+
+export function Card(){
+    return(
+    <div>
+        <H2>Title Card</H2>
+    </div>)
+}
+
+Nesse exemplo criamos um componente para h2, mas podemos criar uma div e estilizar todas as tags dentro dessa div
+ex:
+
+export const SectionDiv = styled.div`
+    border: solid 2px black;
+    p{
+        color: purple;
+    }
+    button{
+        padding: 20px;
+    }
+
+`
+
+<SectionDiv>
+        <p>Lorem, ipsum dolor.</p>
+        <button>Button</button>
+</SectionDiv>
+
+
+Propriedades:
+
+Por vezes vamos querer que um componente receba uma estilização se uma propriedade for verdadeira ou não receber se a propriedade é falsa
+
+Para isso:
+
+No componente estilizado do jsx colocamos a propriedade 
+No arquivo "style.js" podemos executar javascript para definir o estilo que queremos caso a propriedade seja verdadeira ou falsa
+
+ex:
+<SectionDiv isTrue={true}>
+
+export const SectionDiv = styled.div`
+    p{
+        color: ${({isTrue})  => (isTrue===true) ? 'green' : 'red'};
+    }
+`
