@@ -1,0 +1,18 @@
+Existem 3 formas de usar arquivos css nos nossos componentes react:
+
+1-Import css
+
+Basta escrever um arquivo css e importá-lo no componente para usar Não é uma forma muito boa pois podem haver conflitos
+quando temos muitos componentes.
+
+2-Css module
+
+É uma das formas mais comuns de utilizição. Para isso:
+
+Temos nossa pasta de componentes:
+Para cada componente podemos criar um componente.module.css
+Dessa forma as classes estilizadas terão id único e não causaão conflitos em outras estilizações css da aplicação
+Não necessita da instalação de libs, é nativo do react
+
+3-Styled components
+Forma de estilização que necessita da instalação de uma lib
