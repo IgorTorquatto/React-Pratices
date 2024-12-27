@@ -1,0 +1,7 @@
+Para importar imagens com React, guardamos a imagens na pasata assets de src e importamos assim:
+
+import Image from './assets/exemplo.png'
+
+Para usar:
+
+<img src={Image}/>
