@@ -1,0 +1,7 @@
+O react router DOM é uma biblioteca do react que lida com a criação de rotas para que o usuário possa navegar na aplicação
+
+Para isso instalamos a biblioteca react-router-dom 
+
+Criamos uma pasta 'pages' com nossos arquivos jsx que serão as páginas da aplicação
+Criamos um arquivo "Router" que servirá para mapear quais paths serão relativos a quais páginas
+Importamos o arquivo "Router" no arquivo "App" da nossa aplicação . O arquivo router deve ser envolvido pelo BrowserRouter, que também deve ser importado do react.
