@@ -1,0 +1,14 @@
+A forma de lidar com inputs com react é mais fácil do que com javascript puro, pois não é necessário a criação de ids nem a captura de valores dos elementos html.
+
+Com react nós usamos estados nos inputs
+
+Ex:
+const [name,setName] = useState('')
+<input type="text" value={name} onChange={(event)=> setName(event.target.value)}>
+
+Dessa forma atribuimos o valor do input ao estado e quando o campo mudar nós enviamos seu target.value para o método que altera o valor do estado
+
+A medida que vamos atribuindo propriedades ao input podemos encher demais o código, é recomendado componentizar esse elemento.
+
+Em src1 temos um exemplo simples de como usar o input e capturar seus valores
+Em src2 temos um exemplo de componentização do elemento input
