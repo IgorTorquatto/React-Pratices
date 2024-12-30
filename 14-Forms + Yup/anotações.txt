@@ -1,0 +1,16 @@
+Quando precisamos usar formulários na nossa aplicação eles precisam ser validados no front-end e back-end
+
+Fazer isso somente com javascript pode ser trabalhoso e inseguro, podemos usar algumas ferramentas do React para auxiliar
+
+Primeiro o React-Hook-Form é uma forma de validar , mas que tem suas limitações e pontos negativos
+Segundo o Yup que é a forma mais utilizada e poderosa de validação de formulários
+
+Em nosso projeto de formulário React utilizando o React Hook Form e o Yup :
+1- Escrevemos o nosso html em "App.jsx" do formulário
+2- Instalamos a biblioteca "react-hook-form" com o yarn
+3- Instalamos o yup "@hookform/resolvers yup" com o yarn
+4- Fizemos a importação do useForm, yupResolver e * as yup
+5- Montamos o schema de validação yup
+6- Usamos esse schema de validação yup e a captura de erros
+
+Obs: Com react-hook-form não precisamos criar estados para cada campo de input já que ele próprio cria um objeto com os dados enviados no form ao acessar a propriedade "data" da função onSubmit
