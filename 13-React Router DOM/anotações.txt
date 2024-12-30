@@ -5,3 +5,9 @@ Para isso instalamos a biblioteca react-router-dom
 Criamos uma pasta 'pages' com nossos arquivos jsx que serão as páginas da aplicação
 Criamos um arquivo "Router" que servirá para mapear quais paths serão relativos a quais páginas
 Importamos o arquivo "Router" no arquivo "App" da nossa aplicação . O arquivo router deve ser envolvido pelo BrowserRouter, que também deve ser importado do react.
+
+Navegação entre páginas:
+
+Quando não utilizamos o react a navegação entre páginas acontece utilizando a tag "a" e assim quando precisamos trocar de página o index.html será recarregado o que pode gerar atrasos.
+Em React nós precisamos apenas renderizar o componente novamente e assim a navegação não acontece utilizando a tag "a" e sim a tag Link do React.
+Utilizamos o atributo "to" para relacionar com a rota de destino
